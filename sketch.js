@@ -24,7 +24,7 @@ function setup() {
   heart = loadImage('heart.png');
   img = loadImage('img.png');
   textFont(fabella);
-  textSize(75);
+  textSize(125);
   textAlign(CENTER, CENTER);
 
 }
@@ -32,7 +32,7 @@ function setup() {
 function draw() {
   // put drawing code here
   noStroke();
-  if(count > 100) {
+  if(count > 70) {
     count = 0;
     currentColor++;
     if(currentColor > 4) {
@@ -41,7 +41,7 @@ function draw() {
   }
   
   tint(...colors[currentColor]);
-  image(heart, getRandomInt(-100,Wwidth-50), getRandomInt(-100, wHeight-50), heart.width/8, heart.height/8);
+  image(heart, getRandomInt(-100,Wwidth-50), getRandomInt(-100, wHeight-50), heart.width/3, heart.height/3);
   
   image(img, Wwidth/2 - 256, wHeight/2 - 256);
   fill(0,0,0);
