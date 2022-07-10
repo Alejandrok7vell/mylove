@@ -12,6 +12,8 @@ let colors = [
 let count = 0;
 let currentColor = 0;
 
+let txtX = Wwidth + 100
+
 function preload() {
   fabella = loadFont('fabella-flower.ttf');
 }
@@ -20,9 +22,10 @@ function setup() {
   // put setup code here
   frameRate(30);
   createCanvas(Wwidth, wHeight);
-  background(0);
+  background(...colors[currentColor]);
   heart = loadImage('heart.png');
   img = loadImage('img.png');
+  imagen = loadImage('imagen.png');
   textFont(fabella);
   textSize(125);
   textAlign(CENTER, CENTER);
@@ -31,6 +34,7 @@ function setup() {
 
 function draw() {
   // put drawing code here
+  background(...colors[currentColor]);
   noStroke();
   if(count > 70) {
     count = 0;
@@ -41,17 +45,21 @@ function draw() {
   }
   
   tint(...colors[currentColor]);
-  image(heart, getRandomInt(-100,Wwidth-50), getRandomInt(-100, wHeight-50));
+  //image(heart, getRandomInt(-100,Wwidth-50), getRandomInt(-100, wHeight-50));
   
   image(img, Wwidth/2 - 256, wHeight/2 - 256);
   fill(0,0,0);
   text('Te Amo Vanessita', Wwidth/2, 95);
+  text('Te Amo', txtX, wHeight - 100);
+  txt--;
   count++;
 }
 
+/*
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
+*/
 
 function getWidth() {
   if (self.innerWidth) {
