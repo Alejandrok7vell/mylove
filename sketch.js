@@ -28,7 +28,7 @@ function setup() {
   imagen = loadImage('imagen.png');
   textFont(fabella);
   textSize(125);
-  textAlign(CENTER, CENTER);
+  textAlign(LEFT, CENTER);
 
 }
 
