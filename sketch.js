@@ -50,7 +50,10 @@ function draw() {
   image(imagen, Wwidth/2 - 284, wHeight/2 - 213);
   fill(0,0,0);
   text('Te Amo Vanessita', Wwidth/2, 95);
-  text('Te Amo', txtX, wHeight - 100);
+  text(
+    'Gracias por hacer de mi vida algo super mágico y especial, eres lo más bonito que me pudo haber pasado en la vida, eres una niña increible y maravillosa, quiero compartir toda mi vida contigo preciosa, te amo niña de mis sueños uwu. 0.4',
+    txtX, wHeight - 100
+    );
   txtX--;
   count++;
 }
