@@ -51,7 +51,7 @@ function draw() {
   fill(0,0,0);
   text('Te Amo Vanessita', Wwidth/2, 95);
   text('Te Amo', txtX, wHeight - 100);
-  txt--;
+  txtX--;
   count++;
 }
 
