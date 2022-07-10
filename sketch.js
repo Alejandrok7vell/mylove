@@ -54,7 +54,7 @@ function draw() {
     'Gracias por hacer de mi vida algo super mágico y especial, eres lo más bonito que me pudo haber pasado en la vida, eres una niña increible y maravillosa, quiero compartir toda mi vida contigo preciosa, te amo niña de mis sueños uwu. 0.4',
     txtX, wHeight - 100
     );
-  txtX--;
+  txtX-=2;
   count++;
 }
 
